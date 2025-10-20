@@ -61,6 +61,28 @@ const ProgressStackNavigator = () => {
   )
 }
 
+// Create Stack Navigator for Profile Tab
+const ProfileStack = createNativeStackNavigator<ProfileStackParamList>();
+
+// define a ProfileStackNavigator component
+const ProfileStackNavigator = () => {
+  return (
+    <ProfileStack.Navigator>
+      <ProfileStack.Screen 
+      name="Profile" 
+      component={ProfileScreen} 
+      options={{ title: "Profile"}}
+      ></ProfileStack.Screen>
+      <ProfileStack.Screen
+       name="Settings"
+       component={SettingsScreen}
+       options={{ title: "Settings"}}
+      ></ProfileStack.Screen>
+    </ProfileStack.Navigator>
+  )
+}
+
+
 
 export type WorkoutStackParamList = {
   Workouts: undefined;
@@ -107,6 +129,11 @@ const App = () => {
       name="ProgressTab" 
       component={ProgressStackNavigator} 
       options={{ tabBarLabel: "Progress" }}
+      ></Tab.Screen>
+      <Tab.Screen
+        name="ProfileTab" 
+        component={ProfileStackNavigator} 
+        options={{ tabBarLabel: "Profile" }}
       ></Tab.Screen>
     </Tab.Navigator>
   </NavigationContainer>
