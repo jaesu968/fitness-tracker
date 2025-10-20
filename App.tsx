@@ -8,9 +8,11 @@ import { WorkoutDetailScreen } from './components/WorkoutDetailScreen';
 import { WorkoutsScreen } from './components/WorkoutsScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-type TabParamList ={
+// Define Tab Navigator type 
+type TabParamList = {
   Home: undefined;
 }
+// Create Tab Navigator
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
 
@@ -40,7 +42,16 @@ type RootTabParamList = {
 const App = () => {
   return (
    <NavigationContainer>
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+      headerShown: false,
+      tabBarActiveTintColor: '#FF6B35',
+      tabBarInactiveTintColor: '##8E8E93',
+      tabBarStyle: {
+        backgroundColor: '#FFFFFF',
+        borderTopColor: '#E5E5E7',
+        paddingTop: 5,
+      }
+    }}>
       {/* children */}
     </Tab.Navigator>
   </NavigationContainer>
