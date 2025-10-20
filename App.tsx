@@ -41,6 +41,26 @@ const WorkoutsStackNavigator = () => {
   )
 }
 
+// Create Stack Navigator for Progress Tab
+const ProgressStack = createNativeStackNavigator<ProgressStackParamList>();
+
+// define a ProgressStackNavigator component
+const ProgressStackNavigator = () => {
+  return (
+    <ProgressStack.Navigator>
+      <ProgressStack.Screen 
+      name="Progress" 
+      component={ProgressScreen}
+      ></ProgressStack.Screen>
+      <ProgressStack.Screen 
+      name="Goals" 
+      component={GoalsScreen}
+      options={{ title: "Goals"}}
+      ></ProgressStack.Screen>
+      </ProgressStack.Navigator>
+  )
+}
+
 
 export type WorkoutStackParamList = {
   Workouts: undefined;
