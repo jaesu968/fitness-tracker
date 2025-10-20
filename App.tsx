@@ -101,7 +101,12 @@ const App = () => {
       <Tab.Screen 
       name="WorkoutsTab" 
       component={WorkoutsScreen} 
-      options={{ tabBarLabel: 'Workouts'}}
+      options={{ tabBarLabel: "Workouts"}}
+      ></Tab.Screen>
+      <Tab.Screen 
+      name="ProgressTab" 
+      component={ProgressStackNavigator} 
+      options={{ tabBarLabel: "Progress" }}
       ></Tab.Screen>
     </Tab.Navigator>
   </NavigationContainer>
