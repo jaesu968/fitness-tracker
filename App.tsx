@@ -23,6 +23,15 @@ type StackParamList = {
 // Create Stack Navigator for Workouts
 const WorkoutStack = createNativeStackNavigator<WorkoutStackParamList>(); 
 
+// define a WorkoutsStackNavigator component 
+const WorkoutsStackNavigator = () => {
+  return (
+    <WorkoutStack.Navigator>
+      {/* screen elements */}
+    </WorkoutStack.Navigator>
+  )
+}
+
 
 export type WorkoutStackParamList = {
   Workouts: undefined;
