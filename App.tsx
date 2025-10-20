@@ -7,6 +7,7 @@ import { ProgressScreen } from './components/ProgressScreen';
 import { WorkoutDetailScreen } from './components/WorkoutDetailScreen';
 import { WorkoutsScreen } from './components/WorkoutsScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
 
 // Define Tab Navigator type 
 type TabParamList = {
@@ -14,6 +15,13 @@ type TabParamList = {
 }
 // Create Tab Navigator
 const Tab = createBottomTabNavigator<RootTabParamList>();
+
+// Define Stack Navigator types for each tab
+type StackParamList = {
+  Home : undefined; 
+}
+// Create Stack Navigator for Workouts
+const WorkoutStack = createNativeStackNavigator<WorkoutStackParamList>(); 
 
 
 export type WorkoutStackParamList = {
