@@ -27,7 +27,11 @@ const WorkoutStack = createNativeStackNavigator<WorkoutStackParamList>();
 const WorkoutsStackNavigator = () => {
   return (
     <WorkoutStack.Navigator>
-      {/* screen elements */}
+      <WorkoutStack.Screen 
+      name="Workouts" 
+      component={WorkoutsScreen} 
+      options={{ title: 'Workouts' }}
+      ></WorkoutStack.Screen>
     </WorkoutStack.Navigator>
   )
 }
