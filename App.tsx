@@ -73,7 +73,11 @@ const App = () => {
         paddingTop: 5,
       }
     }}>
-      {/* children */}
+      <Tab.Screen 
+      name="WorkoutsTab" 
+      component={WorkoutsScreen} 
+      options={{ tabBarLabel: 'Workouts'}}
+      ></Tab.Screen>
     </Tab.Navigator>
   </NavigationContainer>
   );
