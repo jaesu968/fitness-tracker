@@ -32,6 +32,11 @@ const WorkoutsStackNavigator = () => {
       component={WorkoutsScreen} 
       options={{ title: 'Workouts' }}
       ></WorkoutStack.Screen>
+      <WorkoutStack.Screen 
+      name="WorkoutDetail" 
+      component={WorkoutDetailScreen} 
+      options={{ title: "Workout Details" }}
+      ></WorkoutStack.Screen>
     </WorkoutStack.Navigator>
   )
 }
