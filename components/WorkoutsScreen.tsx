@@ -7,7 +7,7 @@ import { WorkoutStackParamList } from "../App";
 
 type WorkoutsScreenProps = NativeStackScreenProps<WorkoutStackParamList, "Workouts">; 
 
-
+// give navigation prop to WorkoutsScreen component - ( { navigation } : WorkoutsScreenProps )
 export function WorkoutsScreen( { navigation } : WorkoutsScreenProps ){
 
 
