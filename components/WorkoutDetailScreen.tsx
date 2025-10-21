@@ -5,8 +5,11 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { WorkoutStackParamList } from "../App";
 
 type WorkoutDetailScreenProps = NativeStackScreenProps<WorkoutStackParamList, "WorkoutDetail">
-export function WorkoutDetailScreen(){
-  const workoutName = ""
+
+// get the route object from WorkoutDetailScreenProps - ( { route } : WorkoutDetailScreenProps )
+export function WorkoutDetailScreen( { route } : WorkoutDetailScreenProps){
+  // use object destructuring to get workoutName from the route object
+  const workoutName = route.params.workoutName; // route.params is an object with any parameters passed to the screen
 
   const workout = workouts.find(w => w.name === workoutName)
   
