@@ -122,7 +122,7 @@ const App = () => {
     }}>
       <Tab.Screen 
       name="WorkoutsTab" 
-      component={WorkoutsScreen} 
+      component={WorkoutsStackNavigator} 
       options={{ tabBarLabel: "Workouts"}}
       ></Tab.Screen>
       <Tab.Screen 
