@@ -64,6 +64,42 @@ npx expo start --android
 
 If you prefer to open the project on a physical device, scan the QR code printed by the Expo CLI with the Expo Go app.
 
+## Project updates (summary)
+
+The following maintenance and improvements were applied to this project (date: 2025-10-21):
+
+- Upgraded Expo-related dependencies to be compatible with Expo SDK 54 (bumped `expo` to ~54.0.16).
+- Normalized React and React Native versions to match SDK requirements.
+- Cleaned and reinstalled `node_modules` to resolve `@types/react` conflicts and TypeScript editor highlights.
+- Removed missing asset references from `app.json` so Expo uses default icons/splash (avoids unresolved asset errors when `assets/` is absent).
+- Fixed package mismatches and installed updates using `npm install --legacy-peer-deps` to avoid peer dependency issues during the upgrade.
+- Updated project README with local setup/run instructions and Codecademy attribution.
+
+Verification checklist:
+
+1. Install dependencies:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+2. Start the dev server and verify no Expo version warnings:
+
+```bash
+npx expo start --clear
+```
+
+3. (Optional) If you see watchman recrawl warnings, clear watchman watches:
+
+```bash
+watchman watch-del '<path-to-project>' || true
+watchman watch-project '<path-to-project>' || true
+```
+
+If anything unexpected appears during verification, open an issue or paste the CLI output and I'll help resolve it.
+
+For a full list of recent commits and file-level changes, see `CHANGELOG.md`.
+
 ---
 
 Happy learning — enjoy building your Fitness Tracker!
