@@ -96,7 +96,6 @@ watchman watch-del '<path-to-project>' || true
 watchman watch-project '<path-to-project>' || true
 ```
 
-If anything unexpected appears during verification, open an issue or paste the CLI output and I'll help resolve it.
 
 For a full list of recent commits and file-level changes, see `CHANGELOG.md`.
 
