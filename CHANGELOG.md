@@ -49,5 +49,3 @@ All notable changes to this project are documented in this file.
   - Files: .gitignore, App.tsx, app.json, assets/*, index.ts, package-lock.json, package.json, tsconfig.json
 
 ---
-
-If you'd like this changelog formatted differently (grouped by feature, or expanded with PR/issue links), tell me how you prefer it and I can update it.

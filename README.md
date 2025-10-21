@@ -101,5 +101,3 @@ If anything unexpected appears during verification, open an issue or paste the C
 For a full list of recent commits and file-level changes, see `CHANGELOG.md`.
 
 ---
-
-Happy learning — enjoy building your Fitness Tracker!
